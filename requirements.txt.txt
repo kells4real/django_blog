@@ -1,5 +1,0 @@
-pillow 
-django_widgets_tweaks
-django-crispy-forms
-requests
-django-simple-search
