@@ -15,4 +15,4 @@ Made with Django2, Python3, Html5, Bootstrap, Mobirise, CSS3, js, jquery.
 - Follow User (Still working on this) Any help would be appreciated
 
 
-When done, the blog should allow users to Signup, get their own space, post articles and other contents for other users to view, like, dislike, follow user and more..
+Web development is never done, but the aim for now is for users to be able to Signup, get their own space, post articles and other contents for other users to view, like, dislike, follow user and more..
