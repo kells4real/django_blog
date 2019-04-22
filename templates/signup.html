@@ -1,0 +1,42 @@
+
+{% extends 'base.html' %}
+
+{% load widget_tweaks %}
+
+{% block body %}
+<br><br><br><br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3">
+            <h2>SignUp</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3">
+            <hr>
+            <form method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    
+                    {% for hidden_field in form.hidden_fields %}
+                    {{ hidden_field.errors }}
+                    {{ hidden_field }}
+                    {% endfor %}
+
+                <div class="row">
+                        <div class="col-sm-6"><button class="btn btn-outline-success my-2 my-sm-0" >SignUp</button></div>
+                    
+
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    </div>
+
+
+
+
+{% endblock %}

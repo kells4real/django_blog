@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% load friendshiptags %}
+<h1>Following</h1>
+{% get_by_name friendship_context_object_name as var %}
+{% following var %}
+<a href="{% url 'friendship_followers' user.username %}">Following you</a>
+{% endblock content %}
